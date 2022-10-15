@@ -27,6 +27,10 @@ body {
     background-color: var(--body-color);
 }
 
-section {
+span>p {
+    background-color: var(--body-accent-color);
+}
+
+footer {
     background-color: var(--body-accent-color);
 }
