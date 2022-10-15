@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
 :root {
@@ -10,21 +9,33 @@
 }
 
 header>div>p {
+    display: flexbox;
+    justify-content: flex-end;
+    margin: 0 0.5em 0 0;
+    top: 5%;
     display: inline;
-    float: right;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+header>div>p:hover {
+    cursor: pointer;
 }
 
 div {
-    display: flexbox;
+    display: flex;
 }
 
 header {
     background-color: var(--header-color);
     display: flex;
+    justify-content: space-between;
+    width: 425px;
 }
 
 body {
     background-color: var(--body-color);
+    justify-content: center;
 }
 
 span>p {
