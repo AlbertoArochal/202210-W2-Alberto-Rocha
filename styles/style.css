@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --header-color: rgba(81, 105, 167, 255);
+    --body-accent-color: rgba(208, 157, 114, 255);
+    --body-color: rgba(209, 190, 173, 255)
+}
+
+header>div>p {
+    display: inline;
+    float: right;
+}
+
+div {
+    display: flexbox;
+}
+
+header {
+    background-color: var(--header-color);
+    display: flex;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+span>p {
+    background-color: var(--body-accent-color);
+}
+
+footer {
+    background-color: var(--body-accent-color);
+}
