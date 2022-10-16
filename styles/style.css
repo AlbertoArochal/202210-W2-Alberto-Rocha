@@ -45,3 +45,25 @@ span>p {
 footer {
     background-color: var(--body-accent-color);
 }
+
+section>ul>li:hover {
+    color: orangered;
+}
+
+ul {
+    list-style: square;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+ol>li {
+    list-style: none;
+}
+
+ol>li::after {
+    content: "\2716";
+
+}
