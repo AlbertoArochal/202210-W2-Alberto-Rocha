@@ -9,7 +9,7 @@
 }
 
 header>div>p {
-    display: flexbox;
+    display: flex;
     justify-content: flex-end;
     margin: 0 0.5em 0 0;
     top: 5%;
@@ -37,17 +37,20 @@ body {
     justify-content: center;
 }
 
-span>p {
+.counter__number {
     background-color: var(--body-accent-color);
+    width: 425px;
+    ;
 }
 
 footer {
     background-color: var(--body-accent-color);
     width: 425px;
+    text-align: center;
 
 }
 
-section>ul>li:hover {
+div>ul>li:hover {
     color: orangered;
 }
 
@@ -56,11 +59,10 @@ ul {
 }
 
 
-section {
+.container__list {
     display: flex;
     justify-content: space-between;
     width: 425px;
-    height: ;
     align-self: center;
     border-bottom: 2px solid purple;
 }
@@ -77,9 +79,6 @@ ul>li:nth-child(odd) {
     text-decoration: line-through;
 }
 
-span>p {
-    width: 425px;
-}
 
 .result {
     display: flex;
