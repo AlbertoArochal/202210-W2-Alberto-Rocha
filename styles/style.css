@@ -13,7 +13,6 @@ header>div>p {
     justify-content: flex-end;
     margin: 0 0.5em 0 0;
     top: 5%;
-    display: inline;
     margin-top: 25%;
     margin-bottom: 25%;
 }
@@ -51,12 +50,17 @@ section>ul>li:hover {
 }
 
 ul {
-    list-style: square;
+    list-style: none;
 }
+
 
 section {
     display: flex;
     justify-content: space-between;
+    width: 425px;
+    height: ;
+    align-self: center;
+    border-bottom: 2px solid purple;
 }
 
 ol>li {
@@ -65,5 +69,8 @@ ol>li {
 
 ol>li::after {
     content: "\2716";
+}
 
+ul>li:nth-child(odd) {
+    text-decoration: line-through;
 }
