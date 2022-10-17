@@ -17,6 +17,7 @@ header>div>p {
     margin-bottom: 25%;
 }
 
+
 header>div>p:hover {
     cursor: pointer;
 }
@@ -30,6 +31,11 @@ header {
     display: flex;
     justify-content: space-between;
     width: 425px;
+    margin-top: -70px;
+}
+
+.counter {
+    margin-top: -45%;
 }
 
 body {
@@ -44,7 +50,7 @@ body {
 }
 
 footer {
-    background-color: var(--body-accent-color);
+    background-color: var(--header-color);
     width: 425px;
     text-align: center;
 
@@ -84,4 +90,15 @@ ul>li:nth-child(odd) {
     display: flex;
     justify-content: flex-end;
     width: 425px;
+}
+
+.container__cellphone {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border: 5px solid red;
+    min-height: 100vh;
+
+
 }
