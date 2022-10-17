@@ -43,6 +43,8 @@ span>p {
 
 footer {
     background-color: var(--body-accent-color);
+    width: 425px;
+
 }
 
 section>ul>li:hover {
@@ -73,4 +75,14 @@ ol>li::after {
 
 ul>li:nth-child(odd) {
     text-decoration: line-through;
+}
+
+span>p {
+    width: 425px;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    width: 425px;
 }
