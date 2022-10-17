@@ -63,7 +63,6 @@ header {
     display: inline-block;
     justify-content: space-between;
     width: 425px;
-    margin-top: -70px;
 }
 
 body {
@@ -71,13 +70,32 @@ body {
     justify-content: center;
 }
 
-.counter__number {
+.counter {
+    margin-top: -23%;
+    justify-content: space-between;
+    text-align: right;
+    background-color: var(--body-accent-color);
+    display: flex;
+    max-width: 425px;
+}
+
+
+.counter>p {
     background-color: var(--body-accent-color);
     width: 425px;
-    display: block;
-    margin-top: 0;
+    display: inline;
+    justify-items: space-between;
+    margin: auto;
 
 }
+
+.counter>img {
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0.5em;
+}
+
+
 
 footer {
     background-color: var(--header-color);
@@ -106,8 +124,9 @@ ol>li:nth-child(even) {
     width: 425px;
     align-self: center;
     border-bottom: 2px solid purple;
-    grid-row: 2;
-
+    align-content: end;
+    position: relative;
+    top: -50%;
 }
 
 ol>li {
@@ -129,7 +148,8 @@ ul>li:nth-child(odd) {
     justify-content: flex-end;
     width: 425px;
     font-size: 125%;
-    margin-top: -50px;
+    top: -120%;
+    position: relative;
 }
 
 .container__cellphone {
@@ -137,7 +157,7 @@ ul>li:nth-child(odd) {
     justify-content: center;
     margin: auto;
     align-items: center;
-    border: 5px solid red;
     min-height: 100vh;
+    grid-template-rows: min-content;
 
 }
