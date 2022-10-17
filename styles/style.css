@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -8,8 +12,21 @@
     --body-color: rgba(209, 190, 173, 255)
 }
 
-header>div>p {
+.container__text {
     display: flex;
+}
+
+h1 {
+    display: block;
+    max-width: fit-content;
+    font-family: 'Roboto';
+    font-size: x-large;
+    margin: auto;
+    margin-left: 2%;
+}
+
+header>div>p {
+    display: inline-block;
     justify-content: flex-end;
     margin: 0 0.5em 0 0;
     top: 5%;
@@ -17,25 +34,36 @@ header>div>p {
     margin-bottom: 25%;
 }
 
+.about>p {
+    display: inline;
+    margin: 0%;
+}
+
+.about {
+    text-align: right;
+    max-width: fit-content;
+    font-size: 70%;
+    align-items: center;
+    margin: auto;
+    margin-right: 2%
+}
 
 header>div>p:hover {
     cursor: pointer;
 }
 
-div {
-    display: flex;
+header>div {
+    display: grid;
+    height: 100px;
+    padding: 0;
 }
 
 header {
     background-color: var(--header-color);
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     width: 425px;
     margin-top: -70px;
-}
-
-.counter {
-    margin-top: -45%;
 }
 
 body {
@@ -46,7 +74,9 @@ body {
 .counter__number {
     background-color: var(--body-accent-color);
     width: 425px;
-    ;
+    display: block;
+    margin-top: 0;
+
 }
 
 footer {
@@ -62,6 +92,11 @@ div>ul>li:hover {
 
 ul {
     list-style: none;
+    padding: 0;
+}
+
+ol>li:nth-child(even) {
+    text-align: end;
 }
 
 
@@ -71,6 +106,8 @@ ul {
     width: 425px;
     align-self: center;
     border-bottom: 2px solid purple;
+    grid-row: 2;
+
 }
 
 ol>li {
@@ -83,6 +120,7 @@ ol>li::after {
 
 ul>li:nth-child(odd) {
     text-decoration: line-through;
+    justify-content: space-between;
 }
 
 
@@ -90,6 +128,8 @@ ul>li:nth-child(odd) {
     display: flex;
     justify-content: flex-end;
     width: 425px;
+    font-size: 125%;
+    margin-top: -50px;
 }
 
 .container__cellphone {
@@ -99,6 +139,5 @@ ul>li:nth-child(odd) {
     align-items: center;
     border: 5px solid red;
     min-height: 100vh;
-
 
 }
