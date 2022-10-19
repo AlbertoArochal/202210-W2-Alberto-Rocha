@@ -84,21 +84,22 @@ body {
 }
 
 
-.counter>p {
+.counter p {
     background-color: var(--body-accent-color);
     width: 26.56em;
     display: inline;
     justify-items: space-between;
     margin: auto;
+    margin-right: 0.5em;
 
 }
 
-.counter>img {
-    width: 1.6em;
-    height: 1.6em;
+a img {
+    width: 1.7em;
+    height: 1.7em;
     margin: 0.5em;
+    margin-top: 0.7em;
 }
-
 
 
 footer {
@@ -106,7 +107,8 @@ footer {
     width: 26.56em;
     height: 100%;
     position: relative;
-    margin-bottom: -3em;
+    overflow: hidden;
+
 
 
 }
@@ -160,6 +162,7 @@ div.container__list>div>p {
     content: "\2716";
     padding-right: 0.5em;
 
+
 }
 
 div.container__list>div>p::after {
@@ -195,4 +198,43 @@ div:nth-child(even) label {
     min-height: 100vh;
     grid-template-rows: min-content;
 
+}
+
+/* CSS FORMULARIO */
+
+.container__form>form label {
+    text-decoration: none;
+}
+
+.container__form * {
+    display: block;
+    background-color: var(--body-color);
+}
+
+.container__form input,
+input {
+    border: 0;
+    border-bottom: 1px solid purple;
+}
+
+button {
+    background-color: var(--header-color);
+    color: white;
+    max-width: fit-content;
+    cursor: pointer;
+    padding: 0.7em 0.5em;
+    font-weight: 500;
+    border: 0;
+    margin-top: 1em;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+main {
+    height: 100%;
+    position: relative;
+    bottom: 37%;
 }
