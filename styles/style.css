@@ -19,7 +19,7 @@
 
 h1 {
     display: block;
-    max-width: fit-content;
+    min-width: fit-content;
     font-family: 'Roboto';
     font-size: x-large;
     margin: auto;
@@ -42,7 +42,7 @@ header>div>p {
 
 .about {
     text-align: right;
-    max-width: fit-content;
+    min-width: fit-content;
     font-size: 70%;
     align-items: center;
     margin: auto;
@@ -63,7 +63,7 @@ header {
     background-color: var(--header-color);
     display: inline-block;
     justify-content: space-between;
-    max-width: 26.56em;
+    min-width: 26.56em;
     padding-bottom: 10px;
     padding-top: 20px;
 }
@@ -78,8 +78,7 @@ body {
     text-align: right;
     background-color: var(--body-accent-color);
     display: flex;
-    max-width: 26.56em;
-    min-width: 365px;
+    min-width: 26.56em;
     bottom: 40%;
     position: relative;
 }
@@ -87,7 +86,7 @@ body {
 
 .counter p {
     background-color: var(--body-accent-color);
-    max-width: 26.56em;
+    min-width: 26.56em;
     display: inline;
     justify-items: space-between;
     margin: auto;
@@ -105,7 +104,7 @@ a img {
 
 footer {
     background-color: var(--header-color);
-    max-width: 26.56em;
+    min-width: 26.56em;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -149,12 +148,13 @@ label {
 
 div.container__list {
     display: flexbox;
-    max-width: 26.56em;
+    min-width: 26.56em;
     align-self: center;
     border-bottom: 1px solid purple;
     position: relative;
     top: -50%;
     justify-content: space-between;
+    margin-left: 1em;
 }
 
 
@@ -185,7 +185,7 @@ div:nth-child(even) label {
 .result {
     display: flex;
     justify-content: flex-end;
-    max-width: 26.56em;
+    min-width: 26.56em;
     font-size: 125%;
     top: -135%;
     position: relative;
@@ -193,8 +193,7 @@ div:nth-child(even) label {
 
 .container__cellphone {
     display: grid;
-    justify-content: center;
-    margin: auto;
+
     align-items: center;
     min-height: 100vh;
     grid-template-rows: min-content;
@@ -235,7 +234,8 @@ h2 {
 }
 
 main {
-    height: 100%;
+    height: 120%;
+    width: 100%;
     position: relative;
-    bottom: 37%;
+    margin-left: 1em
 }
