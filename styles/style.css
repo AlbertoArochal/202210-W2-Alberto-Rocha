@@ -155,6 +155,10 @@ div.container__list {
     padding: 1em;
 }
 
+div>div input {
+    min-width: 0.7px;
+}
+
 
 div.container__list>div>p {
     text-align: right;
