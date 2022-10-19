@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -62,7 +63,7 @@ header {
     background-color: var(--header-color);
     display: inline-block;
     justify-content: space-between;
-    width: 425px;
+    width: 26.56em;
     padding-bottom: 10px;
     padding-top: 20px;
 }
@@ -73,18 +74,19 @@ body {
 }
 
 .counter {
-    margin-top: -23%;
     justify-content: space-between;
     text-align: right;
     background-color: var(--body-accent-color);
     display: flex;
-    max-width: 425px;
+    max-width: 26.56em;
+    bottom: 40%;
+    position: relative;
 }
 
 
 .counter>p {
     background-color: var(--body-accent-color);
-    width: 425px;
+    width: 26.56em;
     display: inline;
     justify-items: space-between;
     margin: auto;
@@ -101,57 +103,87 @@ body {
 
 footer {
     background-color: var(--header-color);
-    width: 425px;
-    text-align: center;
-    margin-bottom: -70px;
+    width: 26.56em;
+    height: 100%;
+    position: relative;
+    margin-bottom: -3em;
+
 
 }
 
-div>ul>li:hover {
+footer>p {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+}
+
+div.container__list>*:hover {
     color: orangered;
+    cursor: pointer;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ol>li:nth-child(even) {
-    text-align: end;
-}
-
-
-.container__list {
+div.container__list>div {
     display: flex;
-    justify-content: space-between;
-    width: 425px;
+    text-align: right;
+    justify-content: around;
+}
+
+div.container__list>div>p {
+    display: inline;
+    min-width: 50%;
+
+}
+
+label {
+    text-align: left;
+    display: inline;
+    min-width: 47%;
+    margin-left: 0.3em;
+}
+
+div.container__list {
+    display: flexbox;
+    width: 26.56em;
     align-self: center;
     border-bottom: 1px solid purple;
-    align-content: end;
     position: relative;
     top: -50%;
+    justify-content: space-between;
 }
 
-ol>li {
-    list-style: none;
+
+div.container__list>div>p {
+    text-align: right;
+    content: "\2716";
+    padding-right: 0.5em;
+
 }
 
-ol>li::after {
+div.container__list>div>p::after {
     content: "\2716";
 }
 
-ul>li:nth-child(odd) {
+
+
+div:nth-child(odd) label {
     text-decoration: line-through;
-    justify-content: space-between;
+}
+
+div:nth-child(even) label {
+    text-decoration: none;
+
 }
 
 
 .result {
     display: flex;
     justify-content: flex-end;
-    width: 425px;
+    max-width: 26.56em;
     font-size: 125%;
-    top: -120%;
+    top: -135%;
     position: relative;
 }
 
