@@ -63,7 +63,7 @@ header {
     background-color: var(--header-color);
     display: inline-block;
     justify-content: space-between;
-    width: 26.56em;
+    max-width: 26.56em;
     padding-bottom: 10px;
     padding-top: 20px;
 }
@@ -79,6 +79,7 @@ body {
     background-color: var(--body-accent-color);
     display: flex;
     max-width: 26.56em;
+    min-width: 365px;
     bottom: 40%;
     position: relative;
 }
@@ -86,7 +87,7 @@ body {
 
 .counter p {
     background-color: var(--body-accent-color);
-    width: 26.56em;
+    max-width: 26.56em;
     display: inline;
     justify-items: space-between;
     margin: auto;
@@ -104,7 +105,7 @@ a img {
 
 footer {
     background-color: var(--header-color);
-    width: 26.56em;
+    max-width: 26.56em;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -148,7 +149,7 @@ label {
 
 div.container__list {
     display: flexbox;
-    width: 26.56em;
+    max-width: 26.56em;
     align-self: center;
     border-bottom: 1px solid purple;
     position: relative;
