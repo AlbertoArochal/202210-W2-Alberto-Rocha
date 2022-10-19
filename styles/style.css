@@ -63,9 +63,9 @@ header {
     background-color: var(--header-color);
     display: inline-block;
     justify-content: space-between;
-    min-width: 26.56em;
     padding-bottom: 10px;
     padding-top: 20px;
+    width: 100%;
 }
 
 body {
@@ -78,7 +78,6 @@ body {
     text-align: right;
     background-color: var(--body-accent-color);
     display: flex;
-    min-width: 26.56em;
     bottom: 40%;
     position: relative;
 }
@@ -86,7 +85,6 @@ body {
 
 .counter p {
     background-color: var(--body-accent-color);
-    min-width: 26.56em;
     display: inline;
     justify-items: space-between;
     margin: auto;
@@ -104,7 +102,6 @@ a img {
 
 footer {
     background-color: var(--header-color);
-    min-width: 26.56em;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -114,12 +111,13 @@ footer {
 }
 
 footer>p {
-    margin: 0;
+    margin: auto;
     position: absolute;
     top: 30%;
-    left: 40%;
-    -ms-transform: translateY(-30%);
-    transform: translateY(-30%);
+    display: flexbox;
+    width: 100%;
+    text-align: center;
+
 }
 
 div.container__list>*:hover {
@@ -148,13 +146,13 @@ label {
 
 div.container__list {
     display: flexbox;
-    min-width: 26.56em;
     align-self: center;
     border-bottom: 1px solid purple;
     position: relative;
     top: -50%;
     justify-content: space-between;
-    margin-left: 1em;
+    width: 100%;
+    padding: 1em;
 }
 
 
@@ -184,17 +182,19 @@ div:nth-child(even) label {
 
 .result {
     display: flex;
-    justify-content: flex-end;
-    min-width: 26.56em;
     font-size: 125%;
     top: -135%;
     position: relative;
+    width: 97%;
+    margin: auto;
+    justify-content: flex-end;
+    padding-right: 0.7em;
 }
 
 .container__cellphone {
     display: grid;
-
     align-items: center;
+    align-self: center;
     min-height: 100vh;
     grid-template-rows: min-content;
 
