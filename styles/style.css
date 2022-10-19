@@ -156,7 +156,8 @@ div.container__list {
 }
 
 div>div input {
-    min-width: 0.7px;
+    min-width: 1em;
+    border: 2px red solid;
 }
 
 
