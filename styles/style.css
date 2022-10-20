@@ -83,13 +83,13 @@ a img {
 
 .about>p {
     display: inline;
-    margin: 0%;
+    margin: 0.5em;
 }
 
 .about {
     text-align: right;
     min-width: fit-content;
-    font-size: 70%;
+    font-size: 85%;
     align-items: center;
     margin: auto;
     margin-right: 2%
