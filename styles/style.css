@@ -13,10 +13,6 @@
     --body-color: rgba(209, 190, 173, 255)
 }
 
-.container__text {
-    display: flex;
-}
-
 h1 {
     display: block;
     min-width: fit-content;
@@ -35,19 +31,6 @@ header>div>p {
     margin-bottom: 25%;
 }
 
-.about>p {
-    display: inline;
-    margin: 0%;
-}
-
-.about {
-    text-align: right;
-    min-width: fit-content;
-    font-size: 70%;
-    align-items: center;
-    margin: auto;
-    margin-right: 2%
-}
 
 header>div>p:hover {
     cursor: pointer;
@@ -96,6 +79,24 @@ a img {
     height: 1.7em;
     margin: 0.5em;
     margin-top: 0.7em;
+}
+
+.about>p {
+    display: inline;
+    margin: 0%;
+}
+
+.about {
+    text-align: right;
+    min-width: fit-content;
+    font-size: 70%;
+    align-items: center;
+    margin: auto;
+    margin-right: 2%
+}
+
+.container__text {
+    display: flex;
 }
 
 
