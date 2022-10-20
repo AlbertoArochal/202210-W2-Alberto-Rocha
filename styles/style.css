@@ -86,7 +86,6 @@ body {
 .counter p {
     background-color: var(--body-accent-color);
     display: inline;
-    justify-items: space-between;
     margin: auto;
     margin-right: 0.5em;
 
@@ -114,7 +113,6 @@ footer>p {
     margin: auto;
     position: absolute;
     top: 30%;
-    display: flexbox;
     width: 100%;
     text-align: center;
 
@@ -128,7 +126,6 @@ div.container__list>*:hover {
 div.container__list>div {
     display: flex;
     text-align: right;
-    justify-content: around;
 }
 
 div.container__list>div>p {
@@ -145,7 +142,6 @@ label {
 }
 
 div.container__list {
-    display: flexbox;
     align-self: center;
     border-bottom: 1px solid purple;
     position: relative;
